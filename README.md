@@ -4,3 +4,5 @@
 
 https://www.kubeflow.org/docs/components/pipelines/v1/sdk/component-development/
 https://www.kubeflow.org/docs/components/pipelines/v1/sdk/python-function-components/
+
+https://github.com/kubeflow-kale/kale
