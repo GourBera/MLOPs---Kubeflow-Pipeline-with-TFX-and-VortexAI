@@ -1,0 +1,5 @@
+sklearn
+matplotlib
+fastapi
+flask
+unicorn
