@@ -8,3 +8,4 @@ https://www.kubeflow.org/docs/components/pipelines/v1/sdk/python-function-compon
 https://github.com/kubeflow-kale/kale [https://www.youtube.com/watch?v=VDINH5WkBhA] 
 
 https://www.youtube.com/watch?v=OhIa2cnGD8Y
+https://www.youtube.com/watch?v=tBxRpksGzXM&list=PLQY2H8rRoyvxR15n04JiW0ezF5HQRs_8F
