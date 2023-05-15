@@ -9,3 +9,6 @@ https://github.com/kubeflow-kale/kale [https://www.youtube.com/watch?v=VDINH5WkB
 
 https://www.youtube.com/watch?v=OhIa2cnGD8Y
 https://www.youtube.com/watch?v=tBxRpksGzXM&list=PLQY2H8rRoyvxR15n04JiW0ezF5HQRs_8F
+
+
+![TFX pipeline](https://github.com/GourBera/MLOPs---Kubeflow-Pipeline-with-TFX-and-VortexAI/assets/37293512/8227fa87-fc4a-412a-8d60-b3d6a8bbdd45)
