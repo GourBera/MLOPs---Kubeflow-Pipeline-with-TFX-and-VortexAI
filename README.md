@@ -11,4 +11,4 @@ https://www.youtube.com/watch?v=OhIa2cnGD8Y
 https://www.youtube.com/watch?v=tBxRpksGzXM&list=PLQY2H8rRoyvxR15n04JiW0ezF5HQRs_8F
 
 
-![TFX pipeline](https://github.com/GourBera/MLOPs---Kubeflow-Pipeline-with-TFX-and-VortexAI/assets/37293512/8227fa87-fc4a-412a-8d60-b3d6a8bbdd45)
+<img width="686" alt="image" src="https://github.com/GourBera/MLOPs---Kubeflow-Pipeline-with-TFX-and-VortexAI/assets/37293512/c958e335-d41f-4a5b-b26c-c68faeac153c">
