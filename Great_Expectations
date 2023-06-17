@@ -1,0 +1,78 @@
+import great_expectations as ge
+
+
+context = ge.get_context()
+
+
+validator = context.sources.pandas_default.read_csv(
+    "https://raw.githubusercontent.com/great-expectations/gx_tutorials/main/data/yellow_tripdata_sample_2019-01.csv"
+)
+
+# Create Expectations
+validator.expect_column_values_to_not_be_null("pickup_datetime")
+validator.expect_column_values_to_be_between("passenger_count", auto=True)
+validator.save_expectation_suite()
+
+# Validate data
+checkpoint = context.add_or_update_checkpoint(
+    name="my_quickstart_checkpoint",
+    validator=validator,
+)
+
+checkpoint_result = checkpoint.run()
+# print(checkpoint_result)
+# context.view_validation_result(checkpoint_result)
+
+lst = context.list_expectation_suite_names()
+print(lst)
+
+# ---------------------
+
+datasource = context.sources.add_pandas_filesystem(
+    name="demo_pandas", base_directory=data_directory
+)
+
+asset = datasource.add_csv_asset(
+    "yellow_tripdata",
+    batching_regex=r"yellow_tripdata_sample_(?P<year>\d{4})-(?P<month>\d{2}).csv",
+    order_by=["-year", "month"],
+)
+
+upstream_batch_request = asset.build_batch_request({"year": "2020", "month": "04"})
+downstream_batch_request = asset.build_batch_request({"year": "2020", "month": "05"})
+
+upstream_validator = context.get_validator(
+    batch_request=upstream_batch_request,
+    create_expectation_suite_with_name="upstream_expectation_suite",
+)
+downstream_validator = context.get_validator(
+    batch_request=downstream_batch_request,
+    create_expectation_suite_with_name="downstream_expectation_suite",
+)
+
+# Expectation Suite for upstream Validator
+upstream_validator.expect_table_row_count_to_be_between(min_value=5000, max_value=20000)
+upstream_validator.save_expectation_suite(discard_failed_expectations=False)
+
+
+# Execute a Checkpoint
+
+checkpoint = gx.checkpoint.SimpleCheckpoint(
+    name="checkpoint",
+    data_context=context,
+    validations=[
+        {
+            "batch_request": upstream_batch_request,
+            "expectation_suite_name": upstream_validator.expectation_suite_name,
+        },
+        {
+            "batch_request": downstream_batch_request,
+            "expectation_suite_name": downstream_validator.expectation_suite_name,
+        },
+    ],
+)
+
+checkpoint_result = checkpoint.run()
+
+context.build_data_docs()
+
