@@ -11,6 +11,9 @@ https://www.youtube.com/watch?v=OhIa2cnGD8Y
 https://www.youtube.com/watch?v=tBxRpksGzXM&list=PLQY2H8rRoyvxR15n04JiW0ezF5HQRs_8F
 
 https://docs.greatexpectations.io/docs/tutorials/quickstart/
+https://www.tensorflow.org/tfx/guide/tfdv
+
+
 
 
 <img width="686" alt="image" src="https://github.com/GourBera/MLOPs---Kubeflow-Pipeline-with-TFX-and-VortexAI/assets/37293512/c958e335-d41f-4a5b-b26c-c68faeac153c">
