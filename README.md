@@ -9,6 +9,7 @@ https://github.com/kubeflow-kale/kale [https://www.youtube.com/watch?v=VDINH5WkB
 
 https://www.youtube.com/watch?v=OhIa2cnGD8Y
 https://www.youtube.com/watch?v=tBxRpksGzXM&list=PLQY2H8rRoyvxR15n04JiW0ezF5HQRs_8F
+https://www.youtube.com/watch?v=iIiPo4qv97o&ab_channel=KarndeepSingh
 
 https://docs.greatexpectations.io/docs/tutorials/quickstart/
 https://www.tensorflow.org/tfx/guide/tfdv
