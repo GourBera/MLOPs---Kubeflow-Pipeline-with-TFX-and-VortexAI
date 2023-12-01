@@ -16,6 +16,12 @@ https://www.youtube.com/watch?v=RnYa3QsXRAc&list=PLCSi-9pCA1-CdnLr77ugCPuFxUVibh
 https://docs.greatexpectations.io/docs/tutorials/quickstart/
 https://www.tensorflow.org/tfx/guide/tfdv
 
+https://www.youtube.com/watch?v=ldk_RX4treY
+https://www.youtube.com/watch?v=DQRNt8Diyw4
+https://www.youtube.com/watch?v=SdR5P2BDGow
+
+
+
 Maturity Model => https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/mlops-maturity-model
 
 
