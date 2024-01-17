@@ -20,6 +20,9 @@ https://www.youtube.com/watch?v=ldk_RX4treY
 https://www.youtube.com/watch?v=DQRNt8Diyw4
 https://www.youtube.com/watch?v=SdR5P2BDGow
 
+https://mlflow.org/docs/latest/system-metrics/index.html
+
+
 
 
 Maturity Model => https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/mlops-maturity-model
